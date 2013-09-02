@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#00FF00"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/lblFragment1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:text="Fragment #1\n\nPara provar el ciclo de vida de este fragment:\n
+		1) Correr la aplicación\n
+		2) Presionar el botón de Inicio (Casita)\n
+		3) Presionar el botón de aplicaciones (en los equipos antiguos mantener 
+		presionado el botón inicio) para maximizar nuevamente la app\n
+		4) Presionar el botón atrás" />
+
+</LinearLayout>
