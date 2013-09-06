@@ -24,7 +24,12 @@ public class MainActivity extends Activity {
         Cursor c; 
         if (android.os.Build.VERSION.SDK_INT <11) {
         	// menor a Honeycomb
-            c = getContentResolver().query(allContacts, null, null, null, null);
+            c = getContentResolver().query(
+            		allContacts, 
+            		null, 
+            		ContactsContract.Contacts.DISPLAY_NAME + " LIKE '%Chau'", 
+            		null, 
+            		ContactsContract.Contacts._ID + " DESC");
             startManagingCursor(c); 
             
         } else {
@@ -33,9 +38,9 @@ public class MainActivity extends Activity {
             		this, 
             		allContacts, 
             		null, 
-                    null,
+                    ContactsContract.Contacts.DISPLAY_NAME + " LIKE '%Chau'",
                     null, 
-                    null);
+                    ContactsContract.Contacts._ID + " DESC");
             c = cursorLoader.loadInBackground();        	
         }
 
