@@ -39,7 +39,7 @@ public class LoginActivity extends Activity {
 		textView = (TextView) findViewById(R.id.myText);
 	}
 	
-	public void myClickHandler(View view) {
+	public void ingresar(View view) {
 		String stringUser = userText.getText().toString();
 		String stringPassword = passwordText.getText().toString();
 		

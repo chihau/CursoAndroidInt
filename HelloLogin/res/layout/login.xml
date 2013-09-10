@@ -49,7 +49,7 @@
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:onClick="myClickHandler"
+        android:onClick="ingresar"
         android:text="Ingresar" />
 
 </LinearLayout>
